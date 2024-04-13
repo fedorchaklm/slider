@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: #6c6c6c url("../images/bg.jpg") center center no-repeat;
+  min-width: 960px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000;
+}
+
+.slider {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.slider .imgs {
+  text-align: center;
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider .buttons {
+  text-align: center;
+}
+
+.slider .buttons button {
+  margin: 20px 50px 0;
+  width: 75px;
+  height: 75px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.slider .buttons button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider .buttons .prev {
+  background: url("../images/arrow_left.svg") center center no-repeat;
+}
+
+.slider .buttons .next {
+  background: url("../images/arrow_right.svg") center center no-repeat;
+}
+
+.slider .buttons .prev,
+.slider .buttons .next {
+  background-size: cover;
+}
+
+.slider .imgs .current {
+  opacity: 1;
+}
+
+.slider .imgs img {
+  position: absolute;
+  opacity: 0;
+  transition: all .6s;
+  width: 1000px;
+  height: 400px;
+}
